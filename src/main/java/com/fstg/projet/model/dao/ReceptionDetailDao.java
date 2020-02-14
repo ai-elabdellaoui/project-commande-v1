@@ -6,6 +6,7 @@
 package com.fstg.projet.model.dao;
 
 import com.fstg.projet.bean.Reception;
+import com.fstg.projet.bean.ReceptionDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,5 +16,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ReceptionDetailDao extends JpaRepository<Reception, Long>{
-    
+    public ReceptionDetail findByReceptionEtProduit();
 }
