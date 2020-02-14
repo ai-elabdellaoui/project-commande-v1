@@ -8,8 +8,7 @@ import com.fstg.projet.bean.DevisDetail;
 import com.fstg.projet.bean.Produit;
 
 @Repository
-public interface DevisDetailsDao  extends JpaRepository<DevisDetail,Long>{
+public interface DevisDetailsDao extends JpaRepository<DevisDetail, Long> {
 
-	
-	public DevisDao findbyDevieEtProduit(Produit produit,Devis devis);
+	public DevisDao findbyDevieEtProduit(Produit produit, Devis devis);
 }
