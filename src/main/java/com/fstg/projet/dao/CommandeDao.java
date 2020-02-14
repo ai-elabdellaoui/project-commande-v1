@@ -1,4 +1,4 @@
-package com.fstg.projet.model.dao;
+package com.fstg.projet.dao;
 
 import java.io.Serializable;
 

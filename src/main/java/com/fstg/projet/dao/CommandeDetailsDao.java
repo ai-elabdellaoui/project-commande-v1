@@ -11,5 +11,6 @@ import com.fstg.projet.bean.Produit;
 public interface CommandeDetailsDao extends JpaRepository<Commande, Long>{
 
 	
-	public CommandeDetail findByCmdetPrd(Commande commande,Produit produit);
+	public CommandeDetail findByCommande(Commande commande);
+        public CommandeDetail findByProduit(Produit produit);
 }
