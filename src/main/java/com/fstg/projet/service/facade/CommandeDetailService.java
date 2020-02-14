@@ -5,10 +5,16 @@
  */
 package com.fstg.projet.service.facade;
 
+import com.fstg.projet.bean.Commande;
+import com.fstg.projet.bean.CommandeDetail;
+import com.fstg.projet.bean.Produit;
+
 /**
  *
  * @author HP
  */
 public interface CommandeDetailService {
     
+	public CommandeDetail findByCommande(Commande commande);
+        public CommandeDetail findByProduit(Produit produit);
 }
