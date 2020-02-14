@@ -16,5 +16,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface ReceptionDao extends JpaRepository<Reception, Long>{
-    public List<ReceptionDao> findByReference(String reference);
+    public List<Reception> findByReference(String reference);
 }
