@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fstg.projet.bean.Magasin;
-import com.fstg.projet.model.dao.MagasinDao;
+import com.fstg.projet.dao.MagasinDao;
 import com.fstg.projet.service.facade.MagasinService;
 
 @Service

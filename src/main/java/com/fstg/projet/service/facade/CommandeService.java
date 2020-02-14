@@ -6,8 +6,9 @@ import java.util.List;
 import com.fstg.projet.bean.Commande;
 
 public interface CommandeService {
-	public Commande findByRef( String ref);
+	public Commande findByRef( String reference);
 	public List<Commande> findAll();
 	public void save(Commande commande);
+        
 
 }
