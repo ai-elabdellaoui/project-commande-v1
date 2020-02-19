@@ -1,6 +1,5 @@
 package com.fstg.projet.ws.rest;
 
-import com.fstg.projet.ws.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +10,7 @@ import com.fstg.projet.bean.Magasin;
 import com.fstg.projet.service.impl.MagasinServiceImpl;
 
 @RestController
-@RequestMapping("/stock-sir/Magasin")
+@RequestMapping("stock-sir/Magasin")
 public class MagasinRest {
 	
 	
