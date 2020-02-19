@@ -12,6 +12,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -26,7 +28,9 @@ public class Devis implements Serializable {
     private Long id;
     private String ref;
     private Date dateDevis;
+    @ManyToOne
     private Client client;
+    @ManyToMany
     private List<DevisDetail> devisDetails;
 
     public Long getId() {

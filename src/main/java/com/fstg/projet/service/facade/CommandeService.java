@@ -8,7 +8,7 @@ import com.fstg.projet.bean.Commande;
 public interface CommandeService {
 	public Commande findByRef( String reference);
 	public List<Commande> findAll();
-	public void save(Commande commande);
+	public int save(Commande commande);
         
 
 }

@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -25,6 +26,7 @@ public class CommandeDetail implements Serializable {
     private double prix;
     private Double quantiteCmd;
     private Double quantiteReception;
+    @ManyToOne 
     private Commande commande;
 
     public Long getId() {

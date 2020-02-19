@@ -11,6 +11,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 /**
  *
@@ -27,8 +28,12 @@ public class Commande implements Serializable {
     private Double total;
     private Double totalPaye;
     private Double remise;
+    
+    @OneToMany
     private List<CommandeDetail> commandeDetails;
+    @OneToMany
     private List<Produit> produit;
+    @OneToMany
     private List<Reception> receptions;
 
     public String getReference() {

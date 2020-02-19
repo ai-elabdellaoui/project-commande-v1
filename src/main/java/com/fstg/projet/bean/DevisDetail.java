@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -25,6 +26,7 @@ public class DevisDetail implements Serializable {
     private Produit produit;
     private double prix;
     private long qte;
+    @ManyToOne
     private Devis devis;
 
     public Long getId() {

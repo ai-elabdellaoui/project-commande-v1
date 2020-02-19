@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -23,7 +24,9 @@ public class ReceptionDetail implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private long qte;
+    @ManyToOne
     private Reception reception;
+    @ManyToOne
     private Produit produit;
 
     public Long getId() {

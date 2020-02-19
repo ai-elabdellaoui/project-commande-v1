@@ -12,6 +12,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 
 /**
  *
@@ -26,7 +28,10 @@ public class Reception implements Serializable {
     private Long id;
     private String reference;
     private Date dateReception;
+    
+    @ManyToMany
     private List<ReceptionDetail> receptionDetails;
+    @ManyToOne
     private Commande commande;
 
     public Long getId() {
